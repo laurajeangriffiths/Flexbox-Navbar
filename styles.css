@@ -1,0 +1,146 @@
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	background-color: #ffe6b3;
+}
+
+.wrapper {
+	max-width: 100%;
+}
+
+.navbar {
+	background: white;
+	width: 100%;
+	position: fixed;
+}
+
+a {
+	color: gray;
+	font-weight: 50px; 
+	text-decoration: none;
+	padding: 35px 5px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+a:hover {
+	color: #e60073;
+}
+
+.intro > h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 45px;
+	color: #e60073;
+}
+
+.intro p {
+	max-width: 70%;
+	margin: 0px auto 30px auto;
+}
+
+header img {
+	width: 100%;
+
+}
+
+.navbar ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+}
+
+.navbar li {
+	flex-wrap: wrap;
+	padding: 10px 10px;
+}
+
+.contact, .intro, footer {
+	text-align: center;
+}
+
+.contact h2 {
+	color: #e60073;
+}
+
+footer {
+	color: gray;
+	padding-top: 20px;
+}
+
+#contact-form{
+	max-width: 40%;
+	margin: 10px auto;
+	justify-content: center;
+}
+
+.button:hover {
+	color: #e60073;
+}
+
+/* Responsive Styles: */
+
+@media screen and (max-width: 1000px) {
+	.navbar ul {
+		flex-wrap: wrap;
+	}
+
+	.navbar li {
+		flex: 1;
+	}
+
+	form {
+		max-width: 100%;
+		margin: 0px auto;
+	}
+
+	.contact {
+		max-width: 70%;
+		margin: 0px auto;
+		text-align: center;
+	}
+
+	#contact-form {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 540px) {
+
+	.navbar li {
+		flex-basis: 100%;
+	}
+
+	a {
+		padding: 10px 10px;
+	}
+
+	.header {
+		padding-top: 300px;
+	}
+
+	form {
+		max-width: 100%;
+		margin: 0px auto;
+	}
+
+	.contact, .intro {
+		max-width: 90%;
+		margin: 0px auto;
+		text-align: center;
+	}
+
+	#contact-form {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+	}
+
+	.button {
+		font-size: 18px;
+	}
+}
